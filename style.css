@@ -1,12 +1,15 @@
 .image {
-    width: 1125px;
-    align: center;
+    width: 800px;
+    align-content: center;
+    margin-left: 250px;
 }
 
 img {
   width: 20%;
   border: 5px solid #000000;
+  align-content: right;
 }
+
 <style>
         body {
             font-family: 'Georgia', 'Times New Roman', serif;
@@ -129,4 +132,8 @@ img {
                 font-size: 24px;
             }
         }
+
+.imageclass {
+  content-align: center;
+}
     </style>
