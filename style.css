@@ -137,3 +137,65 @@ img {
   content-align: center;
 }
    
+
+        const ctx = document.getElementById('myChart').getContext('2d');
+        const myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+                datasets: [{
+                    label: 'Monthly Revenue ($K)',
+                    data: [65, 78, 85, 92, 88, 95],
+                    backgroundColor: 'rgba(0, 0, 0, 0.05)',
+                    borderColor: '#222',
+                    borderWidth: 2,
+                    tension: 0.3,
+                    fill: true,
+                    pointBackgroundColor: '#222',
+                    pointBorderColor: '#fff',
+                    pointBorderWidth: 2,
+                    pointRadius: 5
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: true,
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    title: {
+                        display: true,
+                        text: 'Revenue Trends (First Half 2024)',
+                        font: {
+                            size: 18,
+                            family: 'Georgia',
+                            weight: 'bold'
+                        },
+                        color: '#222'
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Revenue ($K)',
+                            font: {
+                                family: 'Georgia',
+                                size: 12
+                            }
+                        },
+                        grid: {
+                            color: '#ddd'
+                        }
+                    },
+                    x: {
+                        grid: {
+                            color: '#ddd'
+                        }
+                    }
+                }
+            }
+        });
+  
