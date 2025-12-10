@@ -9,7 +9,14 @@ img {
   border: 5px solid #000000;
   align-content: right;
 }
-
+.caption {
+    text-align: center;
+    font-size: 12px;
+    font-style: italic;
+    color: #666;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
 
         body {
             font-family: 'Georgia', 'Times New Roman', serif;
